@@ -1,0 +1,75 @@
+*
+{
+	font-family: "Verdana", sans-serif;
+}
+
+body
+{
+	background-color: white;
+	margin:auto;
+	width:960px;
+}
+
+h1
+{
+	text-align: left;
+	font-weight: 600;
+	font-size:18pt;
+	margin:auto;
+}
+
+#name
+{
+	background-color: white;
+
+	top: 0px;
+
+	text-align: center;
+	font-size: 40pt;
+	font-weight: normal;
+	margin: 0;
+}
+
+#subtitle
+{
+	background-color: white;
+
+	text-align: center;
+	font-size: 16pt;
+	font-weight: normal;
+	padding: 0px 0px 10px 0px;
+
+	top: 65px;
+	margin: 0;
+}
+
+#links
+{	
+	background-color: white;
+
+	text-align:center;
+	list-style-type: none;
+	margin:0;
+	padding: 0px 0px 20px 0px;
+	top: 100px;
+}
+
+li 
+{
+  display: inline;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.sticky
+{
+	position: -webkit-sticky;
+	position: sticky;
+	z-index:9999;
+}
+
+.anchorpoint
+{
+	position:absolute; 
+	top:-150px;
+}
