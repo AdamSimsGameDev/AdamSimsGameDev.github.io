@@ -38,8 +38,9 @@ h2
 
 p
 {
+    width: 980px;
     font-size:20px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 20px 10px;
 }
 
 .emptyspace
@@ -90,7 +91,7 @@ p
     top: -38px;
     padding: 0;
     margin: 0;
-    width: 1000px;
+    width: 1020px;
 }
 
 .navigation a
