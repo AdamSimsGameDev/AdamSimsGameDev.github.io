@@ -2,6 +2,7 @@
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
+    text-align: center;
 }
 
 h1
@@ -16,9 +17,9 @@ h1
 
 .subtitle
 {        
-    width: 1000px;
+    width: 100%;
+    margin: 0 auto;
     /* font size */
-    text-align: center;
     font-size: 16px;
     /* colors */
     color: rgb(50, 50, 50);
@@ -26,9 +27,9 @@ h1
 
 h2
 {
-    width: 800px;
+    width: 50%;
 	padding: 0px 0px 5px 0px;
-	margin: 0px 0px 20px 50px;
+	margin: 0 auto 20 auto;
     /* font stuff */
     font-weight: normal;
     text-align:center;
@@ -40,9 +41,9 @@ h2
 
 p
 {
-    width: 800px;
+    width: 50%;
     font-size:20px;
-	margin: 0px 0px 20px 50px;
+	margin: 0 auto 20 auto;
 }
 
 .emptyspace
@@ -52,11 +53,9 @@ p
 
 .main
 {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
     padding: 10px 0px;
     z-index: -2;
-    text-align: justify
 }
 
 .sticky
@@ -78,11 +77,10 @@ p
 
 .titlebar
 {
-    display: block;
-    position: relative;
+    position: absolute;
     /* position & size */
+    width: 100%;
     margin: 0 auto;
-    width: 1000px;
 }
 
 .navigation
@@ -92,8 +90,8 @@ p
     position: relative;
     top: -38px;
     padding: 0;
-    margin: 0;
-    width: 1000px;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .navigation a
@@ -102,7 +100,7 @@ p
     float:left;
     padding: 0;
     margin: 0;
-    width: 250px;
+    width: 25%;
     /* font */
     font-size: 22px;
     text-align: center;
@@ -124,10 +122,6 @@ p
 {
     /* position & size */
     margin: 30px 0px 0px 65px;
-    /* columns */
-    -webkit-column-count:2; /* Safari and Chrome */
-    -moz-column-count:2; /* Firefox */
-    column-count: 2;
 }
 
 .portfolio-element
@@ -205,11 +199,6 @@ a.anchor
     height: 300px;
 
     padding: 0px 0px 20px 0px;
-
-    /* columns */
-    -webkit-column-span: none; /* Safari and Chrome */
-    -moz-column-span: none; /* Firefox */
-    column-span: none;
 }
 
 .image-element img
