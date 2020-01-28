@@ -16,6 +16,7 @@ h1
 
 .subtitle
 {        
+    width: 1000px;
     /* font size */
     text-align: center;
     font-size: 16px;
@@ -38,9 +39,9 @@ h2
 
 p
 {
-    width: 980px;
+    width: 900px;
     font-size:20px;
-	margin: 0px 0px 20px 10px;
+	margin: 0px 0px 20px 50px;
 }
 
 .emptyspace
