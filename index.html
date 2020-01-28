@@ -1,54 +1,74 @@
-<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 
-<head>
-<link rel="stylesheet" type="text/css" href="test.css">
-</head>
+    <body>
+        <div class="sticky bar">
+            <div class="titlebar">
+                <h1>Adam Sims</h1>
+                <p class="subtitle emptyspace">Gameplay Programmer</p>
+                <ul class="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="cv.pdf" download="download">CV</a></li>
+                </ul>
+            </div>
+        </div>
 
-<body>
+        <div class="main">
+            <!--about-->
+            <a name="about" class="anchor"></a>
+            <h2>About</h2>
+            <p>
+                Hello, my name is Adam Sims and I am a 3rd year gameplay programmer studying Games Programming at the University of Lincoln.
+			</p>
+			<p>
+				I am mainly interested in procedural content generation and creating topdown games, though I have a keen interest in networking and I am actively trying to explore new areas of game development that interest me. Currently I am working on my dissertation which revolves around the use of procedural animation in horror games.
+			</p>
+			<p>
+				I also actively play video games as a hobby and I frequently take part in game jams, including Global Game Jam. I enjoy participating in game jams as they give me the opportunity to push myself and to better my skills both on my own and in a team.
+            </p>
+			<p class="emptyspace"></p> <!--Just for padding-->
+            <!--finished games-->
+            <a name="portfolio" class="anchor"></a>
+            <h2>Finished Games</h2>
+            <div class="portfolio">
+                <!--BattleMage-->
+                <div class="portfolio-element">
+                    <a href="projects/test.html">
+                        <!--Image-->
+                        <img src="pages/test.jpg" alt="Test">
+                        <!--Text-->
+                        <p id="portfolio-title">BattleMage</p>
+                    </a>
+                </div>
+            </div>
+            <p class="emptyspace"></p> <!--Just for padding-->
+            <!--student projects-->
+            <h2>Student Projects</h2>
+            <div class="portfolio">
+                <!--Magimyte-->
+                <div class="portfolio-element">
+                    <a href="projects/test.html">
+                        <!--Image-->
+                        <img src="pages/magimyte/cover.jpg" alt="Test">
+                        <!--Text-->
+                        <p id="portfolio-title">Magimyte</p>
+                    </a>
+                </div>
+            </div>
+            <p class="emptyspace"></p> <!--Just for padding-->
+            <!--contact-->
+            <a name="contact" class="anchor"></a>
+            <h2>Contact</h2>
+            <p>
+                contact info here
+			</p>
+			<p class="emptyspace"></p><!--Just for padding-->
+		</div>
+    </body>
 
-<div class="floatingheader sticky">
-	<h1 id="name">Adam Sims</h1>
-	<p id="subtitle">Games Programmer</h1>
-
-	<ul id="links">
-	  <li><a href="#home">Home</a></li>
-	  <li><a href="#completed">Completed Projects</a></li>
-	  <li><a href="#projects">Other Projects</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	</ul>
-</div>
-
-<p style="position:relative;">
-    <a name="home" class="anchorpoint"></a>
-	<h1>Home</h1>
-</p>
-
-
-<!-- Released Games -->
-<p style="position:relative;">
-    <a name="completed" class="anchorpoint"></a>
-    <h1>Completed Projects</h1>
-</p>
-
-<!-- Individual Game. -->
-<div class="game">
-	<div class = "gameimage">
-
-	</div>
-	<h1 class = "gametitle" style="margin:0px 5px;">Game Name</h1>
-	<div class = "gametext">
-		<p style="margin:5px;">This is a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game about a game... </p>
-	</div>
-	<div class = "gamelink">
-		<p style="margin:5px;">Link: <a href="http://www.google.com/">Steam</a></p>
-	</div>
-	<div class = "gamereleasedate">
-		<p class = "gamereleasedatetext">Released</p>
-		<p class = "gamereleasedatetext">08/06/1999</p>
-	</div>
-</div>
-
-</body>
-
+	<script> </script>
 </html>
