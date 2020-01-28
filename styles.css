@@ -123,7 +123,7 @@ p
 .portfolio
 {
     /* position & size */
-    margin: 30px 0px 0px 20px;
+    margin: 30px 0px 0px 65px;
     /* columns */
     -webkit-column-count:2; /* Safari and Chrome */
     -moz-column-count:2; /* Firefox */
@@ -135,10 +135,10 @@ p
     position: relative; 
 
     /* position & size */
-    width: 410px;
-    height: 280px;
+    width: 360px;
+    height: 240px;
 
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .portfolio-element img
@@ -166,12 +166,9 @@ p
 {
     /* position & size */
     position: absolute;
-    bottom: 30%;
-    padding: 10px 0px;
-    width: 410px;
-
-    /* border */
-    border-radius: 0px 0px 35px 35px;
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
 
     /* font */
     font-size: 36px;
