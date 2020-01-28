@@ -1,0 +1,223 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+h1
+{
+    /* font size */
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    /* colors */
+    color: rgb(150, 50, 50);
+}
+
+.subtitle
+{        
+    width: 1000px;
+    /* font size */
+    text-align: center;
+    font-size: 16px;
+    /* colors */
+    color: rgb(50, 50, 50);
+}
+
+h2
+{
+    width: 800px;
+	padding: 0px 0px 5px 0px;
+	margin: 0px 0px 20px 50px;
+    /* font stuff */
+    font-weight: normal;
+    text-align:center;
+    font-size: 44px;
+    /* colors */
+    color: rgb(50, 50, 50);
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+p
+{
+    width: 800px;
+    font-size:20px;
+	margin: 0px 0px 20px 50px;
+}
+
+.emptyspace
+{
+	 margin: 0px 0px 50px 0px;
+}
+
+.main
+{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    z-index: -2;
+    text-align: justify
+}
+
+.sticky
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.bar
+{
+    width: 100%;
+    height: 120px;
+    /* colors */
+    border-bottom: 2px solid rgb(50, 50, 50);
+    background-color: lightgray;
+}
+
+.titlebar
+{
+    display: block;
+    position: relative;
+    /* position & size */
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.navigation
+{        
+    list-style: none;
+    /* position & size */
+    position: relative;
+    top: -38px;
+    padding: 0;
+    margin: 0;
+    width: 1000px;
+}
+
+.navigation a
+{        
+    /* position & size */
+    float:left;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    /* font */
+    font-size: 22px;
+    text-align: center;
+    text-decoration:none; 
+    color: rgb(50, 50, 50);
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.navigation a:hover
+{    
+    /* font */
+    color: rgb(120, 120, 120);
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.portfolio
+{
+    /* position & size */
+    margin: 30px 0px 0px 65px;
+    /* columns */
+    -webkit-column-count:2; /* Safari and Chrome */
+    -moz-column-count:2; /* Firefox */
+    column-count: 2;
+}
+
+.portfolio-element
+{   
+    position: relative; 
+
+    /* position & size */
+    width: 360px;
+    height: 240px;
+
+    padding: 0px 0px 0px 0px;
+}
+
+.portfolio-element img
+{
+    /* position & size */
+    width: 100%;
+    height: 100%;
+    /* image */
+    object-fit: fill;
+    border-radius: 35px;
+    filter: brightness(100%);
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.portfolio-element:hover img
+{
+    /* image */
+    filter: brightness(30%);
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.portfolio-element p
+{
+    /* position & size */
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+
+    /* font */
+    font-size: 36px;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    opacity: 0.0;
+
+    /* animation stuff */
+    transition: 0.45s;
+}
+
+.portfolio-element:hover p
+{
+    /* image */
+    opacity: 1.0;
+    /* animation stuff */
+    transition: 0.45s;
+}
+
+a.anchor
+{
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+.image-element
+{   
+    position: relative; 
+
+    /* position & size */
+    width: 470px;
+    height: 300px;
+
+    padding: 0px 0px 20px 0px;
+
+    /* columns */
+    -webkit-column-span: none; /* Safari and Chrome */
+    -moz-column-span: none; /* Firefox */
+    column-span: none;
+}
+
+.image-element img
+{
+    /* position & size */
+    width: 100%;
+    height: 100%;
+    /* image */
+    object-fit: fill;
+    border-radius: 35px;
+}
