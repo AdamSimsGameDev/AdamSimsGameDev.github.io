@@ -9,7 +9,7 @@
 h1
 {
     /* font size */
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: normal;
     text-align: center;
     /* colors */
@@ -70,7 +70,7 @@ p
 .bar
 {
     width: 100%;
-    height: 6vw;
+    height: 8vw;
     /* colors */
     border-bottom: 2px solid rgb(50, 50, 50);
     background-color: lightgray;
@@ -103,7 +103,7 @@ p
     margin: 0;
     width: 25%;
     /* font */
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: center;
     text-decoration:none; 
     color: rgb(50, 50, 50);
@@ -193,7 +193,7 @@ a.anchor
 {
     display: block;
     position: relative;
-    top: -150px;
+    top: -180px;
     visibility: hidden;
 }
 
