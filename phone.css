@@ -69,11 +69,7 @@ p
 
 .bar
 {
-    width: 100%;
-    height: 120px;
-    /* colors */
-    border-bottom: 2px solid rgb(50, 50, 50);
-    background-color: lightgray;
+
 }
 
 .titlebar
@@ -82,7 +78,7 @@ p
     position: relative;
     /* position & size */
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }
 
 .navigation
