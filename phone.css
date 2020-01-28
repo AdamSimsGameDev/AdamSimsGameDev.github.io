@@ -9,7 +9,7 @@
 h1
 {
     /* font size */
-    font-size: 2vw;
+    font-size: 6vw;
     font-weight: normal;
     text-align: center;
     /* colors */
@@ -21,7 +21,7 @@ h1
     width: 100%;
     margin: 0 auto;
     /* font size */
-    font-size: 0.8vw;
+    font-size: 2vw;
     /* colors */
     color: rgb(50, 50, 50);
 }
@@ -34,7 +34,7 @@ h2
     /* font stuff */
     font-weight: normal;
     text-align:center;
-    font-size: 2.5vw;
+    font-size: 4vw;
     /* colors */
     color: rgb(50, 50, 50);
     border-bottom: 2px solid rgb(100, 100, 100);
@@ -43,7 +43,7 @@ h2
 p
 {
     width: 60%;
-    font-size:1vw;
+    font-size:2vw;
 	margin: 0 auto 20 auto;
 }
 
@@ -70,7 +70,7 @@ p
 .bar
 {
     width: 100%;
-    height: 6vw;
+    height: 16vw;
     /* colors */
     border-bottom: 2px solid rgb(50, 50, 50);
     background-color: lightgray;
@@ -89,10 +89,10 @@ p
     list-style: none;
     /* position & size */
     position: relative;
-    top: -1.75vw;
+    top: -1vw;
     padding: 0;
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
 }
 
 .navigation a
@@ -103,7 +103,7 @@ p
     margin: 0;
     width: 25%;
     /* font */
-    font-size: 1vw;
+    font-size: 2vw;
     text-align: center;
     text-decoration:none; 
     color: rgb(50, 50, 50);
@@ -124,7 +124,7 @@ p
     width: 60%;
 
     /* position & size */
-    margin: 30px auto 0px auto;
+    margin: 2vw auto 0px auto;
 }
 
 .portfolio-element
@@ -133,7 +133,8 @@ p
 
     /* position & size */
     width: 100%;
-    height: 19vw;
+    height: 38vw;
+    margin: 0vw auto 2vw auto;
 }
 
 .portfolio-element img
@@ -143,7 +144,7 @@ p
     height: 100%;
     /* image */
     object-fit: fill;
-    border-radius: 35px;
+    border-radius: 5vw;
     filter: brightness(100%);
     /* animation stuff */
     transition: 0.3s;
@@ -165,7 +166,7 @@ p
     bottom: 25%;
 
     /* font */
-    font-size: xx-large;
+    font-size: xxx-large;
     color: rgb(216, 216, 216);
     text-align: center;
     opacity: 0.0;
