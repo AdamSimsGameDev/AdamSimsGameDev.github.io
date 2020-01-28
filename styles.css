@@ -39,7 +39,7 @@ h2
 
 p
 {
-    width: 900px;
+    width: 800px;
     font-size:20px;
 	margin: 0px 0px 20px 50px;
 }
@@ -51,7 +51,7 @@ p
 
 .main
 {
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     padding: 10px 0px;
     z-index: -2;
@@ -134,8 +134,8 @@ p
     position: relative; 
 
     /* position & size */
-    width: 470px;
-    height: 300px;
+    width: 410px;
+    height: 280px;
 
     padding: 0px 0px 20px 0px;
 }
@@ -165,9 +165,9 @@ p
 {
     /* position & size */
     position: absolute;
-    bottom: 37.5%;
+    bottom: 30%;
     padding: 10px 0px;
-    width: 100%;
+    width: 410px;
 
     /* border */
     border-radius: 0px 0px 35px 35px;
