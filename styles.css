@@ -126,21 +126,27 @@ p
     margin: 30px auto 0px auto;
 }
 
+.portfolio-row
+{
+    width: 100%;
+    height: 16vw;
+    margin: 0vw auto 1vw auto;
+}
+
 .portfolio-element
 {   
     float: left;
 
     /* position & size */
     width: 50%;
-    height: 320px;
-
-    padding: 0px 0px 0px 0px;
+    height: 16vw;
 }
 
 .portfolio-element img
 {
     /* position & size */
     width: 90%;
+    height: 100%;
     /* image */
     object-fit: fill;
     border-radius: 35px;
