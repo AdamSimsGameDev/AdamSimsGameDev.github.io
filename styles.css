@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body{
+    background-color: #BEDDE8;
+}
+
 h1
 {
     /* font size */
@@ -37,7 +41,7 @@ h2
     font-size: 2.5vw;
     /* colors */
     color: rgb(50, 50, 50);
-    border-bottom: 2px solid rgb(100, 100, 100);
+    border-bottom: 3px solid rgb(100, 100, 100);
 }
 
 p
@@ -72,8 +76,8 @@ p
     width: 100%;
     height: 8vw;
     /* colors */
-    border-bottom: 4px solid rgb(20, 20, 20);
-    background-color: rgb(50, 50, 50);;
+    border-bottom: 4px solid #00171F;
+    background-color: #003459;
 }
 
 .titlebar
