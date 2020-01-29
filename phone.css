@@ -144,7 +144,7 @@ p
 .portfolio-element img
 {
     /* position & size */
-    width: 90%;
+    width: 95%;
     height: 100%;
     /* image */
     object-fit: fill;
@@ -176,21 +176,20 @@ a.anchor
 
 .image-element
 {   
-    position: relative; 
+    float: left;
 
     /* position & size */
-    width: 470px;
-    height: 300px;
-
-    padding: 0px 0px 20px 0px;
+    width: 100%;
+    height: 45vw;
+    margin: 0vw auto 1vw auto;
 }
 
 .image-element img
 {
     /* position & size */
-    width: 100%;
+    width: 95%;
     height: 100%;
     /* image */
     object-fit: fill;
-    border-radius: 35px;
+    border-radius: 5vw;
 }
