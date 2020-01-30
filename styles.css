@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #BEDDE8;
+    background-color: #F7F7F8;
 }
 
 h1
@@ -76,8 +76,8 @@ p
     width: 100%;
     height: 8vw;
     /* colors */
-    border-bottom: 4px solid #00171F;
-    background-color: #003459;
+    border-bottom: 4px solid rgb(11, 25, 39);
+    background-color: #1B3248;
 }
 
 .titlebar
