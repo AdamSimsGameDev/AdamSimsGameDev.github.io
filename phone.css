@@ -8,21 +8,15 @@
 
 h1
 {
+    width: 90%;
+    margin: 0 auto 10 auto;
     /* font size */
     font-size: 9vw;
     font-weight: normal;
     text-align: center;
     /* colors */
-    color: rgb(150, 50, 50);
-}
-
-.subtitle
-{        
-    margin: 0 auto;
-    /* font size */
-    font-size: 3vw;
-    /* colors */
-    color: rgb(50, 50, 50);
+    color: #DFDBD4;
+    border-bottom: 1px solid #DFDBD4;
 }
 
 h2
@@ -35,8 +29,8 @@ h2
     text-align:center;
     font-size: 4.5vw;
     /* colors */
-    color: rgb(50, 50, 50);
-    border-bottom: 2px solid rgb(100, 100, 100);
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(10, 10, 10);
 }
 
 p
@@ -67,10 +61,9 @@ p
 
 .bar
 {
-    height: 21.5vw;
+    height: 18vw;
     /* colors */
-    border-bottom: 2px solid rgb(50, 50, 50);
-    background-color: lightgray;
+    background-color: #161922;
 }
 
 .titlebar
@@ -85,7 +78,6 @@ p
     list-style: none;
     /* position & size */
     position: relative;
-    top: -1vw;
     padding: 0;
     margin: 0 auto;
     width: 100%;
@@ -102,7 +94,7 @@ p
     font-size: 3.5vw;
     text-align: center;
     text-decoration:none; 
-    color: rgb(50, 50, 50);
+    color:  rgb(200, 200, 200);
     /* animation stuff */
     transition: 0.3s;
 }
@@ -110,7 +102,7 @@ p
 .navigation a:hover
 {    
     /* font */
-    color: rgb(120, 120, 120);
+    color: #2175DA;
     /* animation stuff */
     transition: 0.3s;
 }
@@ -170,7 +162,7 @@ a.anchor
 {
     display: block;
     position: relative;
-    top: -230px;
+    top: -19vw;
     visibility: hidden;
 }
 
