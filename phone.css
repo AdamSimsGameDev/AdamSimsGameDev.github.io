@@ -117,12 +117,12 @@ p
 
 .portfolio-element
 {   
-    float: left;
+    float: left !important;
 
     /* position & size */
-    width: 100%;
+    width: 100% !important;
     height: 45vw;
-    margin: 0vw auto 2vw auto;
+    margin: 0vw auto 2vw auto !important;
 }
 
 .portfolio-element a 
@@ -168,12 +168,12 @@ a.anchor
 
 .image-element
 {   
-    float: left;
+    float: left !important;
 
     /* position & size */
-    width: 100%;
+    width: 100% !important;
     height: 45vw;
-    margin: 0vw auto 1vw auto;
+    margin: 0vw auto 1vw auto !important;
 }
 
 .image-element img
