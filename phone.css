@@ -63,7 +63,7 @@ p
 {
     height: 18vw;
     /* colors */
-    background-color: #161922;
+    background-color: #06172b;
 }
 
 .titlebar
@@ -94,7 +94,7 @@ p
     font-size: 3.5vw;
     text-align: center;
     text-decoration:none; 
-    color:  rgb(200, 200, 200);
+    color:  #DFDBD4;
     /* animation stuff */
     transition: 0.3s;
 }
@@ -153,7 +153,7 @@ p
     transform: translate(-50%, -50%);
     /* font */
     font-size: 8vw;
-    color: rgb(216, 216, 216);
+    color: #DFDBD4;
     text-align: center;
     opacity: 1.0;
 }
