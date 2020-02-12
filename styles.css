@@ -126,14 +126,87 @@ p
 .portfolio-row
 {
     width: 100%;
-    height: 20vw;
+    height: 19vw;
     margin: 0vw auto 1vw auto;
+    padding: 0;
+    background-color: rgb(196, 194, 194);
+    border-radius: 2vw;
+}
+
+.portfolio-info
+{   
+    /* position & size */
+    width: 50%;
+    height: 19vw;
+    font-size: 0.85vw;
+}
+
+.portfolio-info p
+{   
+    position: relative;
+
+    text-align: justify;
+
+    margin: auto 0x;
+    padding: 0px 0px 5px 0px;
+
+    font-size: 0.85vw;
+
+    width: 90%;    
+}
+
+.portfolio-info ul
+{
+    list-style-position: inside;
+    margin: 0px 0px 3vw 0px;
+}
+
+.portfolio-info li
+{
+    position: relative;
+ 
+    margin: auto 0x;
+    padding: 0px 0px 0.25vw 0px;
+
+    width: 90%;   
+
+    text-align: left;
+}
+
+.portfolio-info ul.links
+{
+    position: relative;
+    list-style: none;
+}
+
+.portfolio-info ul.links li
+{    
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    float: left;
+    width: 50%;
+
+    text-decoration: underline;
+}
+
+.portfolio-info p.title
+{    
+    position: relative;
+
+    text-align: center;
+
+    margin: 0.5vw auto 0.5vw auto;
+    padding: 0.25vw;
+
+    border-bottom: 1px solid black;
+
+    font-size: 1.5vw;
+    width: fit-content;    
 }
 
 .portfolio-element
 {   
-    float: left;
-
     /* position & size */
     width: 50%;
     height: 19vw;
@@ -151,20 +224,13 @@ p
 {
     position: relative;
     /* position & size */
-    width: 95%;
+    width: 100%;
     height: 100%;
     /* image */
     object-fit: fill;
-    border-radius: 2vw;
+    outline-width: 1px;
     filter: brightness(100%);
-    /* animation stuff */
-    transition: 0.3s;
-}
-
-.portfolio-element:hover img
-{
-    /* image */
-    filter: brightness(40%);
+    border-radius: 2vw;
     /* animation stuff */
     transition: 0.3s;
 }
@@ -181,14 +247,6 @@ p
     color: #DFDBD4;
     text-align: center;
     opacity: 0.0;
-    /* animation stuff */
-    transition: 0.45s;
-}
-
-.portfolio-element:hover p
-{
-    /* image */
-    opacity: 1.0;
     /* animation stuff */
     transition: 0.45s;
 }
