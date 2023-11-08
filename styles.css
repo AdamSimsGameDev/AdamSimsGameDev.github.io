@@ -8,219 +8,41 @@
 
 body
 {
-    background-color: #DFDBD4;
+    padding: 150px 0px;
 }
 
 h1
 {
-    width: 50%;
-    margin: 0 auto 10 auto;
-    /* font size */
-    font-size: 3vw;
-    font-weight: normal;
-    text-align: center;
-    /* colors */
-    color: #DFDBD4;
-    border-bottom: 1px solid #DFDBD4;
+    font-size: 5vw;
 }
 
 h2
 {
-    width: 60%;
-	padding: 0px 0px 0.5vw 0px;
-	margin: 0 auto 1vw auto;
-    /* font stuff */
-    font-weight: normal;
-    text-align:center;
-    font-size: 2.5vw;
-    /* colors */
-    color: rgb(10, 10, 10);
-    border-bottom: 1px solid rgb(10, 10, 10);
+    font-size: 1.25vw;
+    padding-bottom: 10px;
 }
 
-p
+body p
 {
-    width: 60%;
-    font-size:1vw;
-	margin: 0 auto 1vw auto;
+    width: 70%;
+    padding-left: 15%;
 }
 
-.emptyspace
+.grid
 {
-	 margin: 0px 0px 2.5vw 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    width: 70%;
+    padding-left: 15%;
 }
 
-.main
+.entry
 {
-    width: 100%;
-    padding: 10px 0px;
-    z-index: -2;
+    height: 400px;
 }
 
-.sticky
-{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top:0;
-    z-index: 1;
-}
-
-.bar
-{
-    width: 100%;
-    height: 6.75vw;
-    /* colors */
-    background-color: #06172b;
-}
-
-.titlebar
-{
-    position: absolute;
-    /* position & size */
-    width: 100%;
-    margin: 0 auto;
-}
-
-.navigation
-{        
-    list-style: none;
-    /* position & size */
-    position: relative;
-    padding: 0;
-    margin: 0 auto;
-    width: 60%;
-}
-
-.navigation a
-{        
-    /* position & size */
-    float:left;
-    padding: 0;
-    margin: 0;
-    width: 25%;
-    /* font */
-    font-size: 1.5vw;
-    text-align: center;
-    text-decoration:none; 
-    color:  #DFDBD4;
-    /* animation stuff */
-    transition: 0.3s;
-}
-
-.navigation a:hover
-{    
-    /* font */
-    color: #2175DA;
-    /* animation stuff */
-    transition: 0.3s;
-}
-
-.portfolio
-{
-    width: 60%;
-
-    /* position & size */
-    margin: 2vw auto 0px auto;
-}
-
-.portfolio-row
-{
-    width: 100%;
-    height: 19vw;
-    margin: 0vw auto 1vw auto;
-    padding: 0;
-    background-color: rgb(196, 194, 194);
-    border-radius: 2vw;
-}
-
-.portfolio-info
-{   
-    /* position & size */
-    width: 50%;
-    height: 19vw;
-    font-size: 0.85vw;
-}
-
-.portfolio-info p
-{   
-    position: relative;
-
-    text-align: justify;
-
-    margin: auto 0x;
-    padding: 0px 0px 5px 0px;
-
-    font-size: 0.85vw;
-
-    width: 90%;    
-}
-
-.portfolio-info ul
-{
-    list-style-position: inside;
-    margin: 0px 0px 3vw 0px;
-}
-
-.portfolio-info li
-{
-    position: relative;
- 
-    margin: auto 0x;
-    padding: 0px 0px 0.25vw 0px;
-
-    width: 90%;   
-
-    text-align: left;
-}
-
-.portfolio-info ul.links
-{
-    position: relative;
-    list-style: none;
-}
-
-.portfolio-info ul.links li
-{    
-    position: relative;
-    text-align: center;
-    vertical-align: bottom;
-    float: left;
-    width: 50%;
-
-    text-decoration: underline;
-}
-
-.portfolio-info p.title
-{    
-    position: relative;
-
-    text-align: center;
-
-    margin: 0.5vw auto 0.5vw auto;
-    padding: 0.25vw;
-
-    border-bottom: 1px solid black;
-
-    font-size: 1.5vw;
-    width: fit-content;    
-}
-
-.portfolio-element
-{   
-    /* position & size */
-    width: 50%;
-    height: 19vw;
-}
-
-.portfolio-element a
-{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.portfolio-element img
+.entry img
 {
     position: relative;
     /* position & size */
@@ -230,51 +52,115 @@ p
     object-fit: fill;
     outline-width: 1px;
     filter: brightness(100%);
-    border-radius: 2vw;
-    /* animation stuff */
-    transition: 0.3s;
+    border-radius: 1vw;
 }
 
-.portfolio-element p 
+.entry:hover > .content
 {
-    /* position & size */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* font */
-    font-size: 3.5vw;
-    color: #DFDBD4;
-    text-align: center;
-    opacity: 0.0;
-    /* animation stuff */
+    --height-with-padding: 100%;
+    border-radius: 1vw;
+    transition: 0.45s;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.entry:hover > .content .hidden
+{
+    display:block;
+}
+
+.entry:hover > img
+{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     transition: 0.45s;
 }
 
-a.anchor
+.entry:hover > .content li
 {
-    display: block;
-    position: relative;
-    top: -7vw;
-    visibility: hidden;
+    transition: 0.65s;
 }
 
-.image-element
-{   
+.entry:not(:hover) > .content
+{
+    transition: 0.45s;
+}
+
+.entry:not(:hover) > .content li
+{
+    transition: 0.1s;
+}
+
+.entry:not(:hover) > img
+{
+    transition: 0.45s;
+}
+
+.entry .content
+{
+    --height-with-padding: 60px;
     float: left;
-
-    /* position & size */
-    width: 50%;
-    height: 19vw;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    bottom: var(--height-with-padding);
+    height: calc(var(--height-with-padding) - 20px);
+    width: calc(100% - 50px);
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    line-height: 40px;
+    padding: 10px 25px;
 }
 
-.image-element img
+.entry .content h1
 {
-    position: relative;
-    /* position & size */
-    width: 95%;
-    height: 100%;
-    /* image */
-    object-fit: fill;
-    border-radius: 1vw;
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+}
+
+.entry .content li
+{
+    color: white;
+    text-align: left;
+    font-size: 0.9vw;
+}
+
+.entry .content .hidden
+{
+    display: none;
+}
+
+.entry a
+{    
+    position:relative;
+    text-align: center;
+    vertical-align: bottom;
+    width: 40%;
+    font-size: 1vw;
+    color:white;
+    text-decoration: underline;
+    border: none;
+    border-radius: 10px;
+}
+
+.entry a:hover
+{
+    color:rgb(201, 201, 201);
+}
+
+.links
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+    padding-bottom: 20px;
+}
+
+.links li
+{    
+    list-style: none;
+    display:inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    width: 100px;
 }

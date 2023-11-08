@@ -3,143 +3,146 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" media="only screen and (max-width: 980px), only screen and (max-device-width: 980px)" href="phone.css" />
     </head>
-
+    <!--
     <body>
-        <div class="sticky bar">
-            <div class="titlebar">
-                <h1>Adam Sims</h1>
-                <ul class="navigation">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="cv.pdf" download="download">CV</a></li>
-                </ul>
+        <div class="top-bar">
+            <ul class="top-bar-list">
+            <li><h1>Adam Sims</h1></li>
+            <li><h2>Senior Programmer</h2></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="cv.pdf" download="download">CV</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <a name="about" class="anchor"></a>
+            <h2>ABOUT ME</h2>
+            <p>
+                lorem ipsum or something idk
+            </p>
+            <p class="emptyspace"></p>
+        </div>
+    </body>
+    -->
+    <body>
+        <h1>Adam Sims</h1>
+        <h2>Senior Gameplay Programmer</h2>
+        <ul class="links">
+            <li><a href="https://github.com/AdamSimsGameDev/">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/adam-sims-63b15322a/">LinkedIn</a></li>
+            <li><a href="https://cyanidepanda.itch.io/">Itch.io</a></li>
+            <li><a href="cv.pdf" download="download">CV</a></li>
+        </ul>
+        <p class="info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        
+        </p>
+        <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">Work Projects</h2>
+        <div class="grid">
+            <!--TS-->
+            <div class="entry">
+                <img src="projects/ts/cover.png" alt="TS">
+                <div class="content">
+                    <h1>Unreleased Timesplitters Project</h1>
+                    <div class="hidden">
+                        <ul>
+                            <li>Worked on the project for 3 and a half years. </li>
+                            <li>Built with Unreal Engine 4 and 5. </li>
+                            <li>Implemented systems like the Gameplay Ability System. </li>
+                            <li>Implemented networked gameplay features.</li>
+                            <li>Ran a team that focused on improving game feel.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="main">
-            <!--about-->
-            <a name="about" class="anchor"></a>
-            <h2>About</h2>
-            <p>
-                Hello, my name is Adam Sims and I am a 3rd year gameplay programmer studying Games Programming at the University of Lincoln.
-			</p>
-			<p>
-				I am mainly interested in procedural content generation and creating topdown games, though I have a keen interest in networking and I am actively trying to explore new areas of game development that interest me. Currently I am working on my dissertation which revolves around the use of procedural animation in horror games.
-			</p>
-			<p>
-				I also actively play video games as a hobby and I frequently take part in game jams, including Global Game Jam. I enjoy participating in game jams as they give me the opportunity to push myself and to better my skills both on my own and in a team.
-            </p>
-			<p class="emptyspace"></p> <!--Just for padding-->
-            <!--finished games-->
-            <a name="portfolio" class="anchor"></a>
-            <h2>Personal Projects</h2>
-            <div class="portfolio">
-                <!--BattleMage-->
-                <div class="portfolio-row">
-                    <div class="portfolio-element" style="float: left;">
-                        <!--Image-->
-                        <img src="projects/battlemage/cover.png" alt="BattleMage">
+        <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">Personal Projects</h2>
+        <!--list-->
+        <div class="grid">
+            <!--CyEngine-->
+            <div class="entry">
+                <img src="projects/cyengine/cover.png" alt="CyEngine">
+                <div class="content">
+                    <h1>CyEngine (WIP)</h1>
+                    <div class="hidden">
+                        <ul>
+                            <li>Programmed in C++</li>
+                            <li>Created in order to learn more about engine development.</li>
+                            <li>Uses OpenGL for rendering, and ImGui for the user interface.</li>
+                            <li>Uses a custom build tool to generate reflection data for properties.</li>
+                        </ul>
+                        <a href='https://github.com/AdamSimsGameDev/OpenGLEngine' style="float:left;">GitHub Page</a>
                     </div>
-                    <div class="portfolio-info" style="float: right;">
-                        <p class="title"> BattleMage </p>
-                        <p>A turn based rouge-lite in which the player must battle through hordes of enemies, earning loot and upgrading their gear and spells.</p>
+                </div>
+            </div>
+            <!--BattleMage-->
+            <div class="entry">
+                <img src="projects/battlemage/cover.png" alt="BattleMage">
+                <div class="content">
+                    <h1>BattleMage</h1>
+                    <div class="hidden">
                         <ul>
                             <li>Programmed in C# using Unity</li>
                             <li>Created for the Search For A Star X programming competition.</li>
                             <li>Designed and created over the course of a month and a half.</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="projects/battlemage.html">More Information</a></li>
-                            <li><a href="https://cyanidepanda.itch.io/battlemage">itch.io Page</a></li>
-                        </ul>
+                        <a href='projects/battlemage.html' style="float:left;">More Information</a>
+                        <a href='https://cyanidepanda.itch.io/battlemage' style="float:right;">itch.io Page</a>
                     </div>
                 </div>
-                <div class="portfolio-row">
-                    <!--Magimyte-->
-                    <div class="portfolio-element" style="float: right;">
-                        <!--Image-->
-                        <img src="projects/magimyte/cover.jpg" alt="Magimyte">
-                    </div>
-                    <div class="portfolio-info" style="float: left;">
-                        <p class="title"> Magimyte </p>
-                        <p>An arcade style coop game in which 4 players must fight for control of the magical dynamite.</p>
+            </div>
+            <!--Magimyte-->
+            <div class="entry">
+                <img src="projects/magimyte/cover.jpg" alt="Magimyte">
+                <div class="content">
+                    <h1>Magimyte</h1>
+                    <div class="hidden">
                         <ul>
                             <li>Programmed in C# using Unity</li>
                             <li>Won a prize at Movember Jam hosted at the University of Lincoln.</li>
                             <li>Designed and created in 48 hours.</li>
                             <li>4 player coop-style gameplay.</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="projects/magimyte.html">More Information</a></li>
-                            <li><a href="https://cyanidepanda.itch.io/magimyte">itch.io Page</a></li>
-                        </ul>
+                        <a href='projects/magimyte.html' style="float:left;">More Information</a>
+                        <a href='https://cyanidepanda.itch.io/magimyte' style="float:right;">itch.io Page</a>
                     </div>
                 </div>
-                <!--Row 2-->
-                <div class="portfolio-row"> 
-                    <!--singular element-->
-                    <div class="portfolio-element" style="float: left;">
-                        <!--Image-->
-                        <img src="projects/ggj20/cover.png" alt="Global Game Jam 2020">
-                    </div>
-                    <div class="portfolio-info" style="float: right;">
-                        <p class="title"> Dig Down </p>
-                        <p>An arcade style coop game in which 4 players must kill each other to gather parts for their rocket so they can escape.</p>
+            </div>
+            <!--GGJ2020-->
+            <div class="entry">
+                <img src="projects/ggj20/cover.png" alt="Dig Down">
+                <div class="content">
+                    <h1>Dig Down</h1>
+                    <div class="hidden">
                         <ul>
                             <li>Programmed in C# using Unity</li>
                             <li>Won 1st prize at the Global Game Jam 2020 site hosted at the University of Lincoln.</li>
                             <li>Designed and created in 48 hours.</li>
                             <li>4 player coop-style gameplay.</li>
                         </ul>
-                        <ul class="links">
-                            <li><a href="projects/ggj20.html">More Information</a></li>
-                            <li><a href="https://cyanidepanda.itch.io/terraria-by-picklechips">itch.io Page</a></li>
-                        </ul>
+                        <a href='projects/ggj20.html' style="float:left;">More Information</a>
+                        <a href='https://cyanidepanda.itch.io/terraria-by-picklechips' style="float:right;">itch.io Page</a>
                     </div>
                 </div>
             </div>
-            <p class="emptyspace"></p> <!--Just for padding-->
-            <!--student projects-->
-            <h2>Student Projects</h2>
-            <div class="portfolio">
-                <!--Row 1-->
-                <div class="portfolio-row"> 
-                    <!--singular element-->
-                    <div class="portfolio-element" style="float: left;">
-                        <a href="projects/pcg.html">
-                            <!--Image-->
-                            <img src="projects/pcg/cover.png" alt="Procedural Content Generation">
-                            <!--Text-->
-                            <p id="portfolio-title">Procedural Content Generation</p>
-                        </a>
-                    </div>
-                    <div class="portfolio-info" style="float: right;">
-                        <p class="title"> Procedural Content Generation </p>
-                        <p>An arcade style coop game in which 4 players must kill each other to gather parts for their rocket so they can escape.</p>
+        </div>
+        <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">Student Projects</h2>
+        <div class="grid">
+            <!--GGJ2020-->
+            <div class="entry">
+                <img src="projects/pcg/cover.png" alt="Procedural Content Generation">
+                <div class="content">
+                    <h1>Procedural Content Generation</h1>
+                    <div class="hidden">
                         <ul>
-                            <li>Programmed in C# using Unity</li>
-                            <li>Won 1st prize at the Global Game Jam 2020 site hosted at the University of Lincoln.</li>
-                            <li>Designed and created in 48 hours.</li>
-                            <li>4 player coop-style gameplay.</li>
+                            <li>Created based around the theme of caves.</li>
+                            <li>Procedurally generated terrain and elements.</li>
+                            <li>Scored the highest grade in the course.</li>
                         </ul>
-                        <ul class="links">
-                            <li style="width: 100%;"><a href="projects/pcg.html">More Information</a></li>
-                        </ul>
+                        <a href='projects/pcg.html' style="float:left;">More Information</a>
                     </div>
                 </div>
             </div>
-            <p class="emptyspace"></p> <!--Just for padding-->
-            <!--contact-->
-            <a name="contact" class="anchor"></a>
-            <h2>Contact</h2>
-            <p>
-                In order to get in touch please email me at 
-                <a href=mailto:adamsims.gamedev@gmail.com>adamsims.gamedev@gmail.com</a>.
-			</p>
-			<p class="emptyspace"></p><!--Just for padding-->
-		</div>
+        </div>
     </body>
-
-	<script> </script>
 </html>

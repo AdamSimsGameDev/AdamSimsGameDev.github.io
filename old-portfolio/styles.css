@@ -1,0 +1,280 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #DFDBD4;
+}
+
+h1
+{
+    width: 50%;
+    margin: 0 auto 10 auto;
+    /* font size */
+    font-size: 3vw;
+    font-weight: normal;
+    text-align: center;
+    /* colors */
+    color: #DFDBD4;
+    border-bottom: 1px solid #DFDBD4;
+}
+
+h2
+{
+    width: 60%;
+	padding: 0px 0px 0.5vw 0px;
+	margin: 0 auto 1vw auto;
+    /* font stuff */
+    font-weight: normal;
+    text-align:center;
+    font-size: 2.5vw;
+    /* colors */
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(10, 10, 10);
+}
+
+p
+{
+    width: 60%;
+    font-size:1vw;
+	margin: 0 auto 1vw auto;
+}
+
+.emptyspace
+{
+	 margin: 0px 0px 2.5vw 0px;
+}
+
+.main
+{
+    width: 100%;
+    padding: 10px 0px;
+    z-index: -2;
+}
+
+.sticky
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.bar
+{
+    width: 100%;
+    height: 6.75vw;
+    /* colors */
+    background-color: #06172b;
+}
+
+.titlebar
+{
+    position: absolute;
+    /* position & size */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation
+{        
+    list-style: none;
+    /* position & size */
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.navigation a
+{        
+    /* position & size */
+    float:left;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    /* font */
+    font-size: 1.5vw;
+    text-align: center;
+    text-decoration:none; 
+    color:  #DFDBD4;
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.navigation a:hover
+{    
+    /* font */
+    color: #2175DA;
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.portfolio
+{
+    width: 60%;
+
+    /* position & size */
+    margin: 2vw auto 0px auto;
+}
+
+.portfolio-row
+{
+    width: 100%;
+    height: 19vw;
+    margin: 0vw auto 1vw auto;
+    padding: 0;
+    background-color: rgb(196, 194, 194);
+    border-radius: 2vw;
+}
+
+.portfolio-info
+{   
+    /* position & size */
+    width: 50%;
+    height: 19vw;
+    font-size: 0.85vw;
+}
+
+.portfolio-info p
+{   
+    position: relative;
+
+    text-align: justify;
+
+    margin: auto 0x;
+    padding: 0px 0px 5px 0px;
+
+    font-size: 0.85vw;
+
+    width: 90%;    
+}
+
+.portfolio-info ul
+{
+    list-style-position: inside;
+    margin: 0px 0px 3vw 0px;
+}
+
+.portfolio-info li
+{
+    position: relative;
+ 
+    margin: auto 0x;
+    padding: 0px 0px 0.25vw 0px;
+
+    width: 90%;   
+
+    text-align: left;
+}
+
+.portfolio-info ul.links
+{
+    position: relative;
+    list-style: none;
+}
+
+.portfolio-info ul.links li
+{    
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    float: left;
+    width: 50%;
+
+    text-decoration: underline;
+}
+
+.portfolio-info p.title
+{    
+    position: relative;
+
+    text-align: center;
+
+    margin: 0.5vw auto 0.5vw auto;
+    padding: 0.25vw;
+
+    border-bottom: 1px solid black;
+
+    font-size: 1.5vw;
+    width: fit-content;    
+}
+
+.portfolio-element
+{   
+    /* position & size */
+    width: 50%;
+    height: 19vw;
+}
+
+.portfolio-element a
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-element img
+{
+    position: relative;
+    /* position & size */
+    width: 100%;
+    height: 100%;
+    /* image */
+    object-fit: fill;
+    outline-width: 1px;
+    filter: brightness(100%);
+    border-radius: 2vw;
+    /* animation stuff */
+    transition: 0.3s;
+}
+
+.portfolio-element p 
+{
+    /* position & size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* font */
+    font-size: 3.5vw;
+    color: #DFDBD4;
+    text-align: center;
+    opacity: 0.0;
+    /* animation stuff */
+    transition: 0.45s;
+}
+
+a.anchor
+{
+    display: block;
+    position: relative;
+    top: -7vw;
+    visibility: hidden;
+}
+
+.image-element
+{   
+    float: left;
+
+    /* position & size */
+    width: 50%;
+    height: 19vw;
+}
+
+.image-element img
+{
+    position: relative;
+    /* position & size */
+    width: 95%;
+    height: 100%;
+    /* image */
+    object-fit: fill;
+    border-radius: 1vw;
+}
