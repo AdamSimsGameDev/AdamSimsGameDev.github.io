@@ -164,3 +164,9 @@ body p
     text-align: center;
     width: 100px;
 }
+
+.info
+{
+    text-align: justify;
+    padding-bottom: 8px;
+}

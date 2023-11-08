@@ -165,3 +165,9 @@ body p
     width: 100px;
     font-size: 1.4vw;
 }
+
+.info
+{
+    text-align: justify;
+    padding-bottom: 8px;
+}
