@@ -11,6 +11,18 @@ body
     padding: 150px 0px;
 }
 
+.main ul
+{
+    width: 70%;
+    padding-left: 15%;
+    list-style-position: inside;
+}
+
+.main li
+{
+    text-align:left;
+}
+
 h1
 {
     font-size: 5vw;
