@@ -38,6 +38,7 @@
                 <li>JSON Parser</li>
                 <li>Custom Dynamic Array Class</li>
                 <li>Custom String Class</li>
+                <li>Custom Smart Pointers</li>
             </ul>
             <!--Plans-->
             <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">Future Plans</h2>
@@ -45,7 +46,6 @@
                 The short term plans for the engine are as follows:
             </p>
             <ul>
-                <li>Custom Smart Pointers</li>
                 <li>Improved Reflection System</li>
                 <li>In-editor Gizmos</li>
                 <li>Serializable scenes, saved as assets</li>
@@ -53,6 +53,35 @@
                 <li>Play In Editor (PIE)</li>
                 <li>Packaged Builds</li>
             </ul>
+            <!--Blog-->
+            <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">05/12/2023: Object Manager, Smart Pointers & Visual Update</h2>
+            <p class="info">
+                This will be the first, of hopefully many, blog style posts to this page. In this one I want to cover the changes that I've made to the engine, including smart pointers (weak and shared), an object manager to control the lifetime of objects and some visual changes I made.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Smart Pointers</h3>
+            <p class="info">
+                Smart pointers were important for the project early, as I wanted to make sure that the objects in the scene could clean themselves up once they are done with. To do this I created three classes, the first two being SharedPtr and WeakPtr, and the final being the ReferenceCount class that holds the number of weak and shared pointers that are accessing the data.
+                The SharedPtr, when removed, decrements the shared count. Once this hits 0 it will delete the data, invalidating the ReferenceCount class but not destroying it if any WeakPtrs remain. The WeakPtr class once removed would decrement the weak count, and if both counts hit 0 the ReferenceCount class is also deleted.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Object Manager</h3>
+            <p class="info">
+                The above classes led into the creation of an ObjectManager, which handles the creation of Object-inherited classes, such as the SceneObjects that will make up the game world. These are registered in a map with a GUID, which stores a shared pointer to the object. This gives us a singular point to create extra shared pointers from, but also to make weak pointers from, in case we need one.
+                This allowed me to fix up the issues that I had with the inspector and the "current selected object", since now I can use a WeakPtr and check for the objects validity, without necessarily keeping the object around in memory.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Visual Update</h3>
+            <p class="info">
+                Alongside the above changes, I also wanted to do a visual update to the engine, including a new ImGui style. 
+                I also introduced a new panel called the Outliner, which splits the existing inspector functionality. Instead of storing all of the objects and their properties in a single list, we instead store the list of objects in the Outliner, and the data for the selected object in the Inspector.
+                This also meant I could add Component sections to the inspector, which use CollapsingHeaders. I think these are super neat :)
+            </p>
+            <div class="grid">
+                <div class="image-element">
+                    <img src="../projects/cyengine/05_12_23_image0.png" alt="Image of the engine showing an empty inspector with nothing selected. ">
+                </div>
+                <div class="image-element">
+                    <img src="../projects/cyengine/05_12_23_image1.png" alt="Image of the engine showing the camera selected, with data and components visible in the inspector. ">
+                </div>
+            </div>
             <!--contact-->
             <a name="contact" class="anchor"></a>
             <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">Contact</h2>
