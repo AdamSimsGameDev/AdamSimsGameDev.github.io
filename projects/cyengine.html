@@ -54,6 +54,42 @@
                 <li>Packaged Builds</li>
             </ul>
             <!--Blog-->
+            <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">08/12/2023: Enum Reflection, Transforming Transforms and Refactoring</h2>
+            <p class="info">
+                The focus for the last few days was partially on refactoring existing systems and moving functionality over to components. I also looked into making an editor camera and also reflecting enums, as a method of swapping the mesh we use in the MeshComponent.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Enum Reflection</h3>
+            <p class="info">
+                Adding reflection to enums was primarily a means of getting the name of the enum values to display in-editor. This means I can show a drop-down menu to the user and let them select the enum value they want. To get this working I needed to extend the existing build tool, parsing over enums marked up with ENUM() and pulling out both the names and the values. I then store these in a map of enum names to enum value names, alongside the actual value.
+            </p>
+            <p class="info">
+                A big part of enum parsing was ensuring the values were correct. Since enums can have their values set in multiple ways, either by not doing anything, starting at 0, using an equals operator to set the value directly or using <<. I accounted for each of these in the parsing to ensure the value was always read correctly. This will also help in the future if I decide to setup flags in editor.
+            </p>
+            <p class="info">
+                Once the build tool could parse enums, the next step was to get them rendering in-engine. This was a bit trickier, as there isn't a shared enum "type", so I had to treat enums as a special case when rendering properties. Once I know a property is an enum (which the build tool tells me) I can render them in a custom PropertyField, as a uint8_t.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Transforms</h3>
+            <p class="info">
+                In the last blog post I made an Outliner to better display scene objects. As part of this, you could parent objects to other objects by dragging one onto another in the list. The issue with this was that whilst they were parented in theory, the transforms of the objects weren't linked at all. 
+            </p>
+            <p class="info">
+                To fix this I needed to refactor the transforms such that they would all be treated as being relative to their parent, in position, rotation and scale. This included setting up TransformPoint and InverseTransformPoint style functions to transform data between world and local space.
+            </p>
+            <p class="info">
+                After a fair bit of trial and error, I got it to the point where you could parent objects, and use the root object as a pivot, which is exactly what I wanted from this.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Editor Camera</h3>
+            <p class="info">
+                The main reason I needed to make the above changes was because I finally wanted to add some user interaction to the viewport. The movement was fairly easy, just adjusting the camera relative to the direction it is facing. The problems lay with rotating the camera, since if I applied both rotations to the one object we'd get roll, which you couldn't really fix as a user. The fix for this was to use two objects, the first being the root, which we apply the Yaw rotation to, and the second being the actual camera, which we apply Pitch rotation to.
+            </p>
+            <h3 style="width:70%; padding-left:15%; text-align: left; padding-top: 10px; ">Refactoring</h3>
+            <p class="info">
+                I also took some time over the last few days to look at the way I was rendering properties, since special cases like arrays and enums couldn't be used together. I fixed this by recursing the properties, meaning we are now able to have arrays of enums, and any other special types. I also changed up the PropertyField functions to remove a nasty user-exposed void* as a parameter. Instead now we know the type so we can pass that in directly. Which makes user created property fields easier to setup.
+            </p>
+            <p class="info">
+                Whilst I was here I also added a property display name override for the inspector as meta data.
+            </p>
+            
             <h2 style="width:70%; padding-left:15%; text-align: left; padding-top: 30px; padding-bottom:5px; ">05/12/2023: Object Manager, Smart Pointers & Visual Update</h2>
             <p class="info">
                 This will be the first, of hopefully many, blog style posts to this page. In this one I want to cover the changes that I've made to the engine, including smart pointers (weak and shared), an object manager to control the lifetime of objects and some visual changes I made.
